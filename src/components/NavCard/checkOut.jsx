@@ -28,14 +28,14 @@ const Checkout = () => {
     <>
       <button onClick={() => popUp()}>hyhy</button>
       <h1 style={{ fontSize: "30px" }}>Checkout</h1>
-      <div style={checkoutStyle}>
+      <div style={{checkoutStyle}}>
         <form>
           <label>
             Name:
             <input
               type="text"
               name="name"
-              style={inputStyle}
+              style={{inputStyle}}
               onChange={handleChange}
               value={formData.name}
             />
@@ -45,7 +45,7 @@ const Checkout = () => {
             <input
               type="email"
               name="email"
-              style={inputStyle}
+              style={{inputStyle}}
               onChange={handleChange}
               value={formData.email}
             />
@@ -54,7 +54,7 @@ const Checkout = () => {
             Address:
             <textarea
               name="address"
-              style={inputStyle}
+              style={{inputStyle}}
               onChange={handleChange}
               value={formData.address}
             />
@@ -64,7 +64,7 @@ const Checkout = () => {
             <input
               type="text"
               name="cardNumber"
-              style={inputStyle}
+              style={{inputStyle}}
               onChange={handleChange}
               value={formData.cardNumber}
             />
@@ -74,7 +74,7 @@ const Checkout = () => {
             <input
               type="text"
               name="expiryDate"
-              style={inputStyle}
+              style={{inputStyle}}
               onChange={handleChange}
               value={formData.expiryDate}
             />
@@ -84,12 +84,12 @@ const Checkout = () => {
             <input
               type="text"
               name="cvv"
-              style={inputStyle}
+              style={{inputStyle}}
               onChange={handleChange}
               value={formData.cvv}
             />
           </label>
-          <button type="submit" style={buttonStyle} disabled={isButtonDisabled}>
+          <button type="submit" style={{buttonStyle}} disabled={isButtonDisabled}>
             Place Order
           </button>
         </form>

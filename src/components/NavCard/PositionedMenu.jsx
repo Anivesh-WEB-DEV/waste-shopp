@@ -7,6 +7,7 @@ import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import UserLogo from "../../assets/user.png";
 import LogoutIcon from "@mui/icons-material/Logout";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 export default function PositionedMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
@@ -43,9 +44,10 @@ export default function PositionedMenu() {
           </div>
         ) : (
           <div className="user_info ">
-            <Stack>
+            {/* <Stack>
               <Avatar alt="Remy Sharp" src={UserLogo} />
-            </Stack>
+            </Stack> */}
+            <AccountCircleIcon sx={{color:"#f7207a", width:"56px", height:"56px", }}/>
           </div>
         )}
       </Button>
